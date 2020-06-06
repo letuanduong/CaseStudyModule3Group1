@@ -1,0 +1,17 @@
+- Tao databasea {
+        - Quan ly san pham
+        - Cac bang:
+    }
+- Mo hinh MVC {
+        - Cac class:
+    }
+- Cac chuc nang {
+        -
+        -
+        -
+    }
+- Trien khai design patten {
+        - Proxy: quan ly user
+        - Singerton: quan ly san pham mua
+        - Command: thuc thi cac chuc nang
+}
