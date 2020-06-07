@@ -1,4 +1,4 @@
-package model;
+package model.ProductStone;
 
 public enum ProductType {
 }
