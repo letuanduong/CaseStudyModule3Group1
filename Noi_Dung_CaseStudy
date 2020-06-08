@@ -18,5 +18,9 @@
 
 ################insert library connector8.0
 ############################################ insert branch tuan
+kiem tra branch
 
+
+fillter: kiểm tra đường dẫn trước khi gửi đến servlet để xử lý
+session: phiên làm việc, tạo seaction ID; để biết trình duyệt đăng nhập là ai
 
