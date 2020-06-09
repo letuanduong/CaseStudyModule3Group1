@@ -4,15 +4,23 @@ public class Product {
     private int id;
     private String name;
     private String brand;
-    private String price;
+    private int price;
     private int amount;
     private String description;
 
     public Product() {
     }
 
-    public Product(int id, String name, String brand, String price, int amount, String description) {
+    public Product(int id, String name, String brand, int price, int amount, String description) {
         this.id = id;
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+        this.amount = amount;
+        this.description = description;
+    }
+
+    public Product(String name, String brand, int price, int amount, String description) {
         this.name = name;
         this.brand = brand;
         this.price = price;
@@ -42,11 +50,11 @@ public class Product {
         return this;
     }
 
-    public String getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public Product setPrice(String price) {
+    public Product setPrice(int price) {
         this.price = price;
         return this;
     }
