@@ -30,18 +30,7 @@ public class ProductController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
-        if(action == null) {
-            action = "";
-        }
-        switch (action) {
-            case "delete":
-
-                break;
-            default:
                 listProduct(req,resp);
-                break;
-        }
     }
 
 
@@ -61,13 +50,13 @@ public class ProductController extends HttpServlet {
                 editProduct(req,resp);
                 break;
             case "delete":
-
-                break;
+                deleteProduct(req,resp);
             default:
                 break;
         }
         resp.setContentType("text/html;charset=UTF-8");
     }
+
 
 
     private void insertProduct(HttpServletRequest req, HttpServletResponse resp) {
@@ -122,5 +111,18 @@ public class ProductController extends HttpServlet {
             e.printStackTrace();
         }
 
+    }
+
+    private void deleteProduct(HttpServletRequest req, HttpServletResponse resp) {
+        int id =Integer.parseInt(req.getParameter("id_product"));
+        try {
+            productDAO.deleteProduct(id);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/alertDelete.jsp");
+            dispatcher.forward(req,resp);
+        } catch (ServletException e) {
+            throw new RuntimeException("Không tìm thấy ID");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
