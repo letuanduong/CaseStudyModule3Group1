@@ -1,4 +1,4 @@
-package model.ProductStone;
+package CodeGym.model.ProductStone;
 
 public class Product {
     private int id;
