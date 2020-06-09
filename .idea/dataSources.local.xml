@@ -13,7 +13,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="case_study_module_3" />
+            <name qname="case_study_module3" />
           </node>
         </introspection-scope>
       </schema-mapping>
