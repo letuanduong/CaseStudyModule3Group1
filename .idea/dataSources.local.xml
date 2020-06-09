@@ -20,10 +20,21 @@
       <schema-mapping />
     </data-source>
     <data-source name="@localhost [3]" uuid="a175a527-c128-42b6-b85d-cdbd4684f4e1">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <database-info product="MySQL" version="8.0.20" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="8.0.20" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>mystery1309</user-name>
-      <schema-mapping />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="case_study_module3" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>

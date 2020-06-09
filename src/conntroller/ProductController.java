@@ -1,5 +1,7 @@
 package conntroller;
 
+import model.ProductStone.ProductDAO;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +11,17 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/product")
 public class ProductController extends HttpServlet {
+
+    public ProductDAO productDAO;
+
+    {
+        try {
+            productDAO = new ProductDAO();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        String action = req.getParameter("action");

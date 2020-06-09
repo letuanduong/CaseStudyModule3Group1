@@ -108,10 +108,10 @@
             </ul>
             <ul class="navbar navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">EngLish</a>
+                    <a class="nav-link" href="#">Đăng Nhập</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tiếng Việt</a>
+                    <a class="nav-link" href="#">Đăng Xuất</a>
                 </li>
             </ul>
         </div>
