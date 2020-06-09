@@ -7,19 +7,17 @@ import java.sql.SQLException;
 public class DBConnection {
     private Connection connection;
     private static DBConnection dbConnection;
-    private DBConnection(){
-        String url ="jdbc:mysql://localhost:3306/";
-        String userName ="Case_Study_Module_3";
-        String password = "111333";
+    private DBConnection(String username, String password){
+        String url ="jdbc:mysql://localhost:3306/case_study_module3";
         try {
-            this.connection = DriverManager.getConnection(url, userName, password);
+            this.connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-    public static DBConnection getInstance(){
+    public static DBConnection getInstance(String username, String password){
         if (dbConnection==null){
-            dbConnection=new DBConnection();
+            dbConnection=new DBConnection(username, password);
         }
         return dbConnection;
     }
