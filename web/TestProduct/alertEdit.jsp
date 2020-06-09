@@ -105,46 +105,7 @@
         </div>
     </nav>
     <div align="center">
-        <h1>Edit Product</h1>
-        <form method="post" action="${pageContext.request.contextPath}/product?action=edit">
-            <table border="1" cellpadding="5">
-                <tr>
-                    <th>ID Product :</th>
-                    <td><input type="number" name="id_product" size="45"/></td>
-                </tr>
-
-                <tr>
-                    <th>Product Name :</th>
-                    <td><input type="text" name="name_product" size="45"/></td>
-                </tr>
-
-                <tr>
-                    <th>Product Brand :</th>
-                    <td><input type="text" name="brand_product" size="45"/></td>
-                </tr>
-
-                <tr>
-                    <th>Product Price :</th>
-                    <td><input type="number" name="price_product" size="45"/></td>
-                </tr>
-
-                <tr>
-                    <th>Product Quantity :</th>
-                    <td><input type="number" name="quantity_product" size="45"/></td>
-                </tr>
-
-                <tr>
-                    <th>Product Description :</th>
-                    <td><input type="text" name="description_product" size="45"/></td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Save">
-                    </td>
-                </tr>
-            </table>
-        </form>
+        <h1>Đã Sửa Thông Tin Sản Phẩm Thành Công</h1>
     </div>
 </div>
 

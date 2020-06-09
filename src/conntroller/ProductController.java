@@ -35,11 +35,6 @@ public class ProductController extends HttpServlet {
             action = "";
         }
         switch (action) {
-            case "create":
-                showCreateForm(req,resp);
-                break;
-            case "edit":
-                break;
             case "delete":
 
                 break;
@@ -63,7 +58,7 @@ public class ProductController extends HttpServlet {
                 insertProduct(req,resp);
                 break;
             case "edit":
-
+                editProduct(req,resp);
                 break;
             case "delete":
 
@@ -73,6 +68,7 @@ public class ProductController extends HttpServlet {
         }
         resp.setContentType("text/html;charset=UTF-8");
     }
+
 
     private void insertProduct(HttpServletRequest req, HttpServletResponse resp) {
         String name = req.getParameter("product_name");
@@ -106,8 +102,18 @@ public class ProductController extends HttpServlet {
         }
 
     }
-    private void showCreateForm(HttpServletRequest req, HttpServletResponse resp) {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/createP.jsp");
+
+    private void editProduct(HttpServletRequest req, HttpServletResponse resp) {
+        int id =Integer.parseInt(req.getParameter("id_product"));
+        String name = req.getParameter("name_product");
+        String brand =req.getParameter("brand_product");
+        int price =Integer.parseInt(req.getParameter("price_product"));
+        int quantity =Integer.parseInt(req.getParameter("quantity_product"));
+        String description = req.getParameter("description_product");
+
+        Product product = new Product(id,name,brand,price,quantity,description);
+        productDAO.updateProduct(product);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/alertEdit.jsp");
         try {
             dispatcher.forward(req,resp);
         } catch (ServletException e) {
@@ -115,5 +121,6 @@ public class ProductController extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }

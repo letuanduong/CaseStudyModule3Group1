@@ -78,7 +78,7 @@
                     <a href="${pageContext.request.contextPath}/TestProduct/creatP.jsp" class="nav-link"><i class="fas fa-phone"></i>Thêm Mới Sản Phẩm</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Góp Ý</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/editP.jsp"><i class="fa fa-wrench"></i> Sửa Thông Tin Sản Phẩm</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-question"></i> Hỏi Đáp</a>
@@ -107,6 +107,7 @@
     <div align="center">
         <h1>Đã Thêm Sản Phẩm Thành Công</h1>
     </div>
+</div>
 
 </body>
 </html>

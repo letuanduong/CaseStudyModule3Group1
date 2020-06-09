@@ -94,7 +94,7 @@ public class ProductDAO implements IProductDAO {
 
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Product not exist !");
         }
 
 
