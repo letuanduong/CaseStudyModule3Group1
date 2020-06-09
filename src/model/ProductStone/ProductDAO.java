@@ -1,4 +1,4 @@
 package model.ProductStone;
 
-public enum ProductType {
+public class ProductDAO {
 }
