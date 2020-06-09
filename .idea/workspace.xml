@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be858484-7842-449b-99ef-86f2d2c02a76" name="Default Changelist" comment="" />
+    <list default="true" id="be858484-7842-449b-99ef-86f2d2c02a76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1611d3ef-3f62-4110-96b4-591a99fc249b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1611d3ef-3f62-4110-96b4-591a99fc249b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/users/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/users/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/connection/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/connection/DBConnection.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +31,16 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -61,6 +78,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Demo_sission_filler" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -131,7 +149,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2f3f5e07" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -151,6 +179,7 @@
       <workItem from="1591599752798" duration="257000" />
       <workItem from="1591601050419" duration="10956000" />
       <workItem from="1591626666127" duration="34000" />
+      <workItem from="1591667983702" duration="2214000" />
     </task>
     <servers />
   </component>
@@ -175,10 +204,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1591598655143" />
-    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591606089709">
+    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591669614501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591606089709" />
+    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591669614501" />
     <state x="411" y="154" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591434075229">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -191,26 +220,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="474" y="234" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1591520470120" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591626700984">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591669858307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591626700984" />
-    <state width="1323" height="186" key="GridCell.Tab.0.bottom" timestamp="1591599304135">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591669858307" />
+    <state width="905" height="259" key="GridCell.Tab.0.bottom" timestamp="1591669820768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="186" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591599304135" />
-    <state width="1323" height="186" key="GridCell.Tab.0.center" timestamp="1591599304135">
+    <state width="905" height="259" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591669820768" />
+    <state width="905" height="259" key="GridCell.Tab.0.center" timestamp="1591669820768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="186" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591599304135" />
-    <state width="1323" height="186" key="GridCell.Tab.0.left" timestamp="1591599304134">
+    <state width="905" height="259" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591669820768" />
+    <state width="905" height="259" key="GridCell.Tab.0.left" timestamp="1591669820768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="186" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591599304134" />
-    <state width="1323" height="186" key="GridCell.Tab.0.right" timestamp="1591599304135">
+    <state width="905" height="259" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591669820768" />
+    <state width="905" height="259" key="GridCell.Tab.0.right" timestamp="1591669820768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="186" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591599304135" />
+    <state width="905" height="259" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591669820768" />
     <state width="1323" height="73" key="GridCell.Tab.1.bottom" timestamp="1591587506620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
