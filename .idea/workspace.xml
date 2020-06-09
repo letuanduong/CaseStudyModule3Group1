@@ -6,22 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be858484-7842-449b-99ef-86f2d2c02a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/conntroller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/employee/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/model/ProductStone/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/model/ProductStone/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conntroller/InterfaceProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conntroller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ProductFunction/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ProductFunction/ProductServiceImplement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ProductFunction/Product_Key_Function.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ProductStone/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ProductStone/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ProductStone/ProductType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ProductStone/ProductDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/account/ProxyAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/product/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/product/view.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="be858484-7842-449b-99ef-86f2d2c02a76" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
