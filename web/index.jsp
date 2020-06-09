@@ -1,31 +1,16 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: admin
+  Date: 6/9/2020
+  Time: 12:39 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<t:layout>
-
-  hhhhhhhhhhhhhhhhhhh
-<%--  <jsp:body>--%>
-<%--    <table class="table">--%>
-<%--      <tr>--%>
-<%--        <td>Thứ tự</td>--%>
-<%--        <td>Họ tên</td>--%>
-<%--        <td></td>--%>
-<%--      </tr>--%>
-<%--      <c:forEach items="${customers}" var="customer" varStatus="loop">--%>
-<%--        <tr>--%>
-<%--          <td>--%>
-<%--            <c:out value="${loop.index + 1}"></c:out>--%>
-<%--          </td>--%>
-<%--          <td>--%>
-<%--            <c:out value="${customer.getName()}"></c:out>--%>
-<%--          </td>--%>
-<%--          <td>--%>
-<%--            <a href="./customers?command=delete&id=${customer.getId()}">Xoá</a>--%>
-<%--          </td>--%>
-<%--        </tr>--%>
-
-<%--      </c:forEach>--%>
-<%--    </table>--%>
-<%--  </jsp:body>--%>
-
-</t:layout>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+$END$
+</body>
+</html>

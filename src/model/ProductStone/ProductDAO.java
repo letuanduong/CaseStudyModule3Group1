@@ -2,16 +2,20 @@ package model.ProductStone;
 
 import service.DBConnection;
 
+import java.sql.Connection;
 import java.util.List;
 
 public class ProductDAO implements IProductDAO {
 
     DBConnection dbConnection;
-    public ProductDAO(DBConnection dbConnection){
-        this.dbConnection=dbConnection;
+    public ProductDAO() throws ClassNotFoundException {
+        String user = "mystery1309";
+                String pass = "13091997";
+        this.dbConnection=DBConnection.getInstance(user,pass);
     }
     @Override
     public List<Product> selectAllProduct() {
+
         return null;
     }
 
@@ -32,6 +36,7 @@ public class ProductDAO implements IProductDAO {
 
     @Override
     public void insertProduct(Product product) {
+        String insertProduct ="insert into products( product_name, product_brand, product_price, product_amount, product_description) VALUES (?,?,?,?,?);";
 
     }
 }
