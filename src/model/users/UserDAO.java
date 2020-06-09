@@ -1,7 +1,7 @@
 package model.users;
 
 
-import service.connection.DBConnection;
+import service.DBConnection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

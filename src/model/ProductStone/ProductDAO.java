@@ -1,8 +1,15 @@
 package model.ProductStone;
 
+import service.DBConnection;
+
 import java.util.List;
 
 public class ProductDAO implements IProductDAO {
+
+    DBConnection dbConnection;
+    public ProductDAO(DBConnection dbConnection){
+        this.dbConnection=dbConnection;
+    }
     @Override
     public List<Product> selectAllProduct() {
         return null;
