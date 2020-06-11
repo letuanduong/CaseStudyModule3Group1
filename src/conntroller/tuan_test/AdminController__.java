@@ -6,14 +6,13 @@ import service.DBConnection;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/customer")
-public class CustomerController extends HttpServlet {
+@WebServlet(urlPatterns = "/admin_")
+public class AdminController__ extends CustomerController_ {
 
     private UserDAO userDAO;
     DBConnection dbConnection;
@@ -47,17 +46,32 @@ public class CustomerController extends HttpServlet {
                     getListUser(req, resp);
                     break;
                 case "getName":
-                    String nameParam1 = req.getParameter("id");
+                    String nameParam1 = req.getParameter("name");
                     getByName(nameParam1, req, resp);
+                    break;
+                case "delete":
+                    String nameParam2 = req.getParameter("name");
+                    deleteByUsername(nameParam2, req, resp);
                     break;
                 default:
                     PrintWriter writer = resp.getWriter();
                     writer.print("insert command: list, save, getName, delete");
             }
+
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    private void deleteByUsername(String _username, HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        try {
+            userDAO.deleteByUsername(_username);
+            getListUser(req, resp);
+        } catch (Exception e) {
+            resp.getWriter().write("error delete username" + _username);
         }
     }
 
