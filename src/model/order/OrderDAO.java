@@ -56,7 +56,7 @@ public class OrderDAO implements IOrderDAO {
         String sql = "insert into orders (userName) values (?)";
         //phải bắt đc userName
         PreparedStatement statement = dbConnection.getConnection().prepareStatement(sql);
-        statement.setString();
+//        statement.setString();
 
         //lấy ra orderId vừa thêm vào
         String getNewestOrder = "call getNewestOrder";
