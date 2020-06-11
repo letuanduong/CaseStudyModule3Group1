@@ -21,7 +21,7 @@ public class CustomerController extends HttpServlet {
     DBConnection dbConnection;
     {
         try {
-            dbConnection = DBConnection.getInstance("root", "111333");
+            dbConnection = DBConnection.getInstance("mystery1309", "13091997");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

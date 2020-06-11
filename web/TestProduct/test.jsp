@@ -88,10 +88,10 @@
             </ul>
             <ul class="navbar navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/Login.jsp">Đăng Nhập</a>
+                    <a class="nav-link" href="/logout">Đăng Xuất</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Đăng Xuất</a>
+                    <a href="/login" class="nav-link">Đăng Nhập</a>
                 </li>
             </ul>
         </div>
@@ -100,7 +100,7 @@
     <center>
         <div align="center">
             <h2>List of Product</h2>
-            <table border="1" cellpadding="5">
+            <table class="table table-hover table-bordered">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>

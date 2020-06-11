@@ -6,6 +6,40 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="11821caa-2aef-429c-a4c4-5e2ff51a063e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/TestProduct/notAccount.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/TestProduct/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/TestProduct/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/user/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/user/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/user/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/user/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/user/UserLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/conntroller/user/UserLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/filter/PermissionFilterAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/filter/PermissionFilterAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/filter/PermissionFilterCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/filter/PermissionFilterCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/model/order/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/WEB-INF/classes/model/order/OrderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CodeGym_CaseStudy_Module3_Group1_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/UserLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/UserLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/filter/PermissionFilterAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/filter/PermissionFilterAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/filter/PermissionFilterCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/filter/PermissionFilterCustomer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/model/order/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/model/order/OrderDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conntroller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/oder/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conntroller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/product/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conntroller/user/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/user/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conntroller/user/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/user/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conntroller/user/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/user/UserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/order/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/order/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/TestProduct/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/TestProduct/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/viewUser/viewUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/viewUser/viewUser.jsp" afterDir="false" />
+=======
     <list default="true" id="be858484-7842-449b-99ef-86f2d2c02a76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -15,6 +49,14 @@
       <change beforePath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/UserLogout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodeGym_CaseStudy_Module3_Group1/conntroller/user/UserLogout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/conntroller/user/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/user/UserLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/conntroller/user/UserLogout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conntroller/user/UserLogout.java" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/filter/PermissionFilterAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/PermissionFilterAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filter/PermissionFilterCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/PermissionFilterCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/order/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/order/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/List_user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/List_user.jsp" afterDir="false" />
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +77,64 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+<<<<<<< HEAD
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+=======
         <item name="tuan_connect_mySQL" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="tuan_connect_mySQL" type="feb32156:DbDataSourceImpl" />
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+<<<<<<< HEAD
+=======
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+<<<<<<< HEAD
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+=======
+        <item name="tuan_connect_mySQL" type="feb32156:DbDataSourceImpl" />
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="case_study_module3: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+<<<<<<< HEAD
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="case_study_module3: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="case_study_module3: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+=======
+        <item name="tuan_connect_mySQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="case_study_module3: schema" type="76f4a085:MysqlImplModel$Schema" />
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
     </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -75,10 +159,24 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Demo_session_ID" />
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
+      <recent name="C:\Users\admin\IdeaProjects\CaseStudyModule3Group1\web" />
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1\web" />
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1" />
     </key>
@@ -87,16 +185,23 @@
       <recent name="conntroller.user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+=======
+      <recent name="C:\Users\admin\IdeaProjects\CaseStudyModule3Group1\web\view" />
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1\web" />
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1\web\testUser" />
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1\web\WEB-INF\tags" />
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1\web\WEB-INF" />
+<<<<<<< HEAD
       <recent name="E:\OneDrive\CodeGym\Module3\CodeGym_CaseStudy_Module3_Group1\web\WEB-INF\testUser" />
+=======
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 8.5.553" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.553" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login" />
+    <configuration name="Tomcat 9.0.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.35" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/product" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CodeGym_CaseStudy_Module3_Group1:war exploded">
@@ -116,6 +221,21 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="50192" />
       </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -158,16 +278,22 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.21121883" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:tuan_connect_mySQL" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+<<<<<<< HEAD
                 <item name="root:tuan_connect_mySQL" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@65feb118" type="9fbbdea:ServiceModel$ServiceNode" />
+=======
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
               </path>
             </expand>
             <select />
@@ -176,9 +302,12 @@
       </list>
     </option>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be858484-7842-449b-99ef-86f2d2c02a76" name="Default Changelist" comment="" />
+      <changelist id="11821caa-2aef-429c-a4c4-5e2ff51a063e" name="Default Changelist" comment="" />
       <created>1591709947222</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -191,9 +320,18 @@
       <workItem from="1591766430243" duration="1261000" />
       <workItem from="1591771048056" duration="14066000" />
       <workItem from="1591797118208" duration="5713000" />
+<<<<<<< HEAD
+      <workItem from="1591837405446" duration="8661000" />
+      <workItem from="1591846799661" duration="6520000" />
+      <workItem from="1591858630734" duration="331000" />
+=======
       <workItem from="1591837405446" duration="15702000" />
+<<<<<<< HEAD
       <workItem from="1591857520408" duration="1431000" />
       <workItem from="1591859010835" duration="171000" />
+=======
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
     </task>
     <servers />
   </component>
@@ -214,14 +352,19 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="409" y="0" width="736" height="824" key="#Tomcat_8.5.553" timestamp="1591846756304">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="409" y="0" width="736" height="824" key="#Tomcat_8.5.553/0.0.1536.824@0.0.1536.824" timestamp="1591846756304" />
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1591778900736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591778900736" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591802467995">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="343" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591847436271">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591802467995" />
+    <state x="343" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591847436271" />
     <state x="488" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1591775259118">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -233,8 +376,84 @@
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1591857823836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+<<<<<<< HEAD
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591857823836" />
     <state width="1095" height="335" key="GridCell.Tab.0.bottom" timestamp="1591858955271">
+=======
+<<<<<<< HEAD
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591802961683" />
+    <state width="1138" height="271" key="GridCell.Tab.0.bottom" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.0.center" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.0.left" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.0.right" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.1.bottom" timestamp="1591858610302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591858610302" />
+    <state width="1138" height="271" key="GridCell.Tab.1.center" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.1.left" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.1.right" timestamp="1591858610301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1591858610301" />
+    <state width="1138" height="271" key="GridCell.Tab.2.bottom" timestamp="1591858610302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591858610302" />
+    <state width="1138" height="271" key="GridCell.Tab.2.center" timestamp="1591858610302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1591858610302" />
+    <state width="1138" height="271" key="GridCell.Tab.2.left" timestamp="1591858610302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1591858610302" />
+    <state width="1138" height="271" key="GridCell.Tab.2.right" timestamp="1591858610302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1138" height="271" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1591858610302" />
+    <state width="1138" height="271" key="GridCell.Tab.3.bottom" timestamp="1591849766566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1323" height="100" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591842395216" />
+    <state width="1138" height="271" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591849766566" />
+    <state width="1138" height="271" key="GridCell.Tab.3.center" timestamp="1591849766566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1323" height="100" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1591842395215" />
+    <state width="1138" height="271" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1591849766566" />
+    <state width="1138" height="271" key="GridCell.Tab.3.left" timestamp="1591849766566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1323" height="100" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1591842395215" />
+    <state width="1138" height="271" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1591849766566" />
+    <state width="1138" height="271" key="GridCell.Tab.3.right" timestamp="1591849766566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1323" height="100" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1591842395216" />
+    <state width="1138" height="271" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1591849766566" />
+=======
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591851968099" />
+    <state width="1323" height="100" key="GridCell.Tab.0.bottom" timestamp="1591854556283">
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1095" height="335" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591858955271" />
@@ -297,7 +516,12 @@
     <state width="1323" height="230" key="GridCell.Tab.3.right" timestamp="1591858185933">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+<<<<<<< HEAD
     <state width="1323" height="230" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1591858185933" />
+=======
+    <state width="1323" height="100" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1591854556284" />
+>>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
     <state width="260" height="539" key="HiddenNamespacesPopup" timestamp="1591760098168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -310,6 +534,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="71" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1591677211055" />
+    <state x="509" y="195" width="517" height="418" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1591850213039">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="509" y="195" width="517" height="418" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1591850213039" />
     <state x="531" y="81" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1591753916225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -331,9 +559,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/src/filter/PermissionFilterAdmin.java</url>
           <line>24</line>
           <option name="timeStamp" value="2" />
+=======
+          <url>file://$PROJECT_DIR$/src/conntroller/user/UserLogin.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -68,22 +68,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/order">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/product">
                         <i class="fas fa-home"></i> Trang chủ<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="/order" class="nav-link"><i class="fas fa-plus"></i>Xem Lịch Sử Mua Hàng</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/editP.jsp"><i class="fa fa-wrench"></i> Xem Giỏ Hàng Hiện Tại</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/deleteP.jsp"><i class="fas fa-times"></i> Thanh Toán</a>
                 </li>
             </ul>
             <ul class="navbar navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Đăng Xuất</a>
+                    <a class="nav-link" href="/login">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Đăng Ký</a>
                 </li>
             </ul>
         </div>
@@ -100,7 +94,6 @@
                         <th>Price</th>
                         <th>Amount</th>
                         <th>Description</th>
-                        <th>Action</th>
                     </tr>
                     <c:forEach var="product" items="${ListProduct}">
                         <tr>
@@ -110,9 +103,6 @@
                             <td><c:out value="${product.getPrice()}"/></td>
                             <td><c:out value="${product.getAmount()}"/></td>
                             <td><c:out value="${product.getDescription()}"/></td>
-                            <td>
-                                <a href="/order?action=buy&id=${product.getId()}">Mua Sản Phẩm</a>
-                            </td>
                         </tr>
                     </c:forEach>
                 </table>

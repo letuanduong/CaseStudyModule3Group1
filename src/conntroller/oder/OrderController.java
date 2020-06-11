@@ -1,4 +1,4 @@
-package conntroller;
+package conntroller.oder;
 
 import model.ProductStone.Product;
 import model.ProductStone.ProductBill;
@@ -44,9 +44,14 @@ public class OrderController extends HttpServlet {
             case "buy":
                 showBuyProduct(req,resp);
                 break;
+            case "history":
+                showCheckHistory(req,resp);
             default:
                 listProduct(req,resp);
         }
+    }
+
+    private void showCheckHistory(HttpServletRequest req, HttpServletResponse resp) {
     }
 
 
@@ -58,7 +63,7 @@ public class OrderController extends HttpServlet {
         }
         switch (action){
             case "add":
-                insertOrderDetail(req,resp);
+//                insertOrderDetail(req,resp);
             case "history":
                 checkHistory(req,resp);
 
@@ -108,21 +113,21 @@ public class OrderController extends HttpServlet {
             e.printStackTrace();
         }
     }
-    private void insertOrderDetail(HttpServletRequest req, HttpServletResponse resp) {
-        int id_product=Integer.parseInt(req.getParameter("id"));
-        int quantity = Integer.parseInt(req.getParameter("quantity"));
-
-        try {
-            orderDAO.insertOrderDetail(id_product,quantity);
-            RequestDispatcher dispatcher = req.getRequestDispatcher("viewUser/alertAddSuccessfully.jsp");
-            dispatcher.forward(req,resp);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    private void insertOrderDetail(HttpServletRequest req, HttpServletResponse resp) {
+//        int id_product=Integer.parseInt(req.getParameter("id"));
+//        int quantity = Integer.parseInt(req.getParameter("quantity"));
+//
+//        try {
+//            orderDAO.insertOrderDetail(id_product,quantity);
+//            RequestDispatcher dispatcher = req.getRequestDispatcher("viewUser/alertAddSuccessfully.jsp");
+//            dispatcher.forward(req,resp);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } catch (ServletException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 }

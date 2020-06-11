@@ -1,4 +1,4 @@
-package conntroller;
+package conntroller.product;
 
 import model.ProductStone.Product;
 import model.ProductStone.ProductDAO;
@@ -30,9 +30,58 @@ public class ProductController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String action = req.getParameter("action");
+        if (action==null){
+            action="";
+        }
+        switch (action){
+            case "create" :
+                showCreateForm(req,resp);
+                break;
+            case "edit":
+                showEditForm(req,resp);
+                break;
+            case "delete":
+                showDeleteForm(req,resp);
+                break;
+            default:
                 listProduct(req,resp);
+
+        }
     }
 
+    private void showDeleteForm(HttpServletRequest req, HttpServletResponse resp) {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/deleteP.jsp");
+        try {
+            dispatcher.forward(req,resp);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showEditForm(HttpServletRequest req, HttpServletResponse resp) {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/editP.jsp");
+        try {
+            dispatcher.forward(req,resp);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showCreateForm(HttpServletRequest req, HttpServletResponse resp) {
+        RequestDispatcher dispatcher =req.getRequestDispatcher("TestProduct/creatP.jsp");
+        try {
+            dispatcher.forward(req,resp);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     @Override
@@ -81,7 +130,7 @@ public class ProductController extends HttpServlet {
         List<Product> ListProduct = new ArrayList<>();
         ListProduct= productDAO.selectAllProduct();
         req.setAttribute("ListProduct",ListProduct);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/test.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/notAccount.jsp");
         try {
             dispatcher.forward(req,resp);
         } catch (ServletException e) {
