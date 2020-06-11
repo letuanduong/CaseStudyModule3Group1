@@ -28,7 +28,7 @@ public class PermissionFilterCustomer implements Filter {
                 chain.doFilter(req, resp);
             } else {
                 PrintWriter writer = resp.getWriter();
-                writer.write("You are customer");
+                writer.write("You are admin");
             }
         }
     }

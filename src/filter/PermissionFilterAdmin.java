@@ -29,7 +29,7 @@ public class PermissionFilterAdmin implements Filter {
                 chain.doFilter(req, resp);
             } else {
                 PrintWriter writer = resp.getWriter();
-                writer.write("You are admin");
+                writer.write("You are customer");
             }
         }
     }
