@@ -3,6 +3,10 @@
   <component name="dataSourceStorageLocal">
     <data-source name="tuan_connect_mySQL" uuid="27879b5b-3bff-4435-af3b-054284ad8b90">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+<<<<<<< HEAD
+      <secret-storage>forget</secret-storage>
+      <schema-mapping />
+=======
       <schema-mapping />
     </data-source>
     <data-source name="@localhost" uuid="d83d1678-4d4f-46c1-b2c7-805a371b8d50">
@@ -21,6 +25,7 @@
           </node>
         </introspection-scope>
       </schema-mapping>
+>>>>>>> cb7c7d96011939f83a6a109de48bc440b94b1185
     </data-source>
   </component>
 </project>

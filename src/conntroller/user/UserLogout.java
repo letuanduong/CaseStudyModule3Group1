@@ -1,6 +1,9 @@
 package conntroller.user;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8596471e44756188ec830f3f58dbf24f8f80e670
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -26,6 +29,7 @@ public class UserLogout extends HttpServlet {
         }
 
         HttpSession session = req.getSession(false);
+        session.setAttribute("IS_LOGIN_ED", false);
         if (session != null) {
             session.invalidate();
         }
