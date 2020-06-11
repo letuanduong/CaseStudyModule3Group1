@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebFilter(filterName = "PermissionFilterAdmin", urlPatterns = "/admin")
+@WebFilter(filterName = "PermissionFilterAdmin", urlPatterns = "/admin_")
 public class PermissionFilterAdmin implements Filter {
 
     public static final int ROLE_ADMIN = 1;

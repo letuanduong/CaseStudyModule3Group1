@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebFilter(filterName = "PermissionFilterCustomer", urlPatterns = "/customer")
+@WebFilter(filterName = "PermissionFilterCustomer", urlPatterns = "/customer_")
 public class PermissionFilterCustomer implements Filter {
 
     public static final int ROLE_CUSTOMER = 0;
