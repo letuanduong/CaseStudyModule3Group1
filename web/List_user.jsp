@@ -27,13 +27,24 @@
                     <c:out value="${user.getUsername()}"/>
                 </td>
                 <td>
-                    <c:out value="${user.getUsername()}"/>
+                    <c:out value="${user.getPassword()}"/>
                 </td>
                 <td>
                     <c:out value="${user.getRole()}"/>
                 </td>
             </tr>
         </c:forEach>
+<%--            <tr>--%>
+<%--                <td>--%>
+<%--                    <c:out value="${users.getUsername}" />--%>
+<%--                </td>--%>
+<%--                <td>--%>
+<%--                    <c:out value="${user.getPassword()}"/>--%>
+<%--                </td>--%>
+<%--                <td>--%>
+<%--                    <c:out value="${user.getRole()}"/>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
     </table>
 </div>
 </body>

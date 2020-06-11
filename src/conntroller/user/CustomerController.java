@@ -48,8 +48,8 @@ public class CustomerController extends HttpServlet {
                 case "list":
                     getListUser(req, resp);
                     break;
-                case "getname":
-                    String nameParam1 = req.getParameter("name");
+                case "getName":
+                    String nameParam1 = req.getParameter("id");
                     getByName(nameParam1, req, resp);
                     break;
                 default:

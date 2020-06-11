@@ -1,5 +1,6 @@
 package conntroller.user;
 
+import model.users.User;
 import model.users.UserDAO;
 import service.DBConnection;
 
@@ -46,7 +47,7 @@ public class AdminController extends CustomerController {
                 case "list":
                     getListUser(req, resp);
                     break;
-                case "getname":
+                case "getName":
                     String nameParam1 = req.getParameter("name");
                     getByName(nameParam1, req, resp);
                     break;

@@ -49,6 +49,7 @@ public class UserLogin extends HttpServlet {
         if (user.getPassword().equals(_password)) {
             HttpSession session = req.getSession();
             session.setAttribute("ROLE", user.getRole());
+
             req.setAttribute("message", "login Success");
             RequestDispatcher dispatcher = req.getRequestDispatcher("Login.jsp");
             dispatcher.forward(req, resp);
