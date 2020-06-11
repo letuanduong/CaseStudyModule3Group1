@@ -20,7 +20,7 @@ public class UserLogin_ extends HttpServlet {
     DBConnection dbConnection;
     {
         try {
-            dbConnection = DBConnection.getInstance("mystery1309", "13091997");
+            dbConnection = DBConnection.getInstance("root", "111333");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
