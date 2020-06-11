@@ -68,14 +68,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/product">
+                    <a class="nav-link" href="${pageContext.request.contextPath}/order">
                         <i class="fas fa-home"></i> Trang chủ<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-list-alt"></i> Giới thiệu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="${pageContext.request.contextPath}/viewUser/viewHistory.jsp" class="nav-link"><i class="fas fa-plus"></i>Xem Lịch Sử Mua Hàng</a>
+                    <a href="/order" class="nav-link"><i class="fas fa-plus"></i>Xem Lịch Sử Mua Hàng</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/editP.jsp"><i class="fa fa-wrench"></i> Xem Giỏ Hàng Hiện Tại</a>
@@ -86,10 +83,7 @@
             </ul>
             <ul class="navbar navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Đăng Nhập</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Đăng Xuất</a>
+                    <a class="nav-link" href="/logout">Đăng Xuất</a>
                 </li>
             </ul>
         </div>

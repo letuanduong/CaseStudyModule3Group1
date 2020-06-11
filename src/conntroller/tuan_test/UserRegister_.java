@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/register")
-public class UserRegister extends HttpServlet {
+@WebServlet(urlPatterns = "/register_")
+public class UserRegister_ extends HttpServlet {
 
     UserDAO userDAO;
     DBConnection dbConnection;

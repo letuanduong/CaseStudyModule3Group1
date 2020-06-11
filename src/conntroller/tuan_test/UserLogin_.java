@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/login")
-public class UserLogin extends HttpServlet {
+@WebServlet(urlPatterns = "/login_")
+public class UserLogin_ extends HttpServlet {
 
     UserDAO userDAO;
     DBConnection dbConnection;

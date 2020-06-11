@@ -55,12 +55,10 @@ public class OrderDAO implements IOrderDAO {
     public void insertOrderDetail(int id_product, int quantity) throws SQLException {
         String sql = "insert into orders (userName) values (?)";
         PreparedStatement statement = dbConnection.getConnection().prepareStatement(sql);
-<<<<<<< HEAD
 //        statement.setString();
 
         //lấy ra orderId vừa thêm vào
-=======
->>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
+
         String getNewestOrder = "call getNewestOrder";
         Statement getOrder = dbConnection.getConnection().createStatement();
         ResultSet resultSet = getOrder.executeQuery(getNewestOrder);

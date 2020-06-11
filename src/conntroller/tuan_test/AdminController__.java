@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/admin")
-public class AdminController extends CustomerController {
+@WebServlet(urlPatterns = "/admin_")
+public class AdminController__ extends CustomerController_ {
 
     private UserDAO userDAO;
     DBConnection dbConnection;

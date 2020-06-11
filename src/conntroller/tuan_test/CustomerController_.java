@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/customer")
-public class CustomerController extends HttpServlet {
+@WebServlet(urlPatterns = "/customer_")
+public class CustomerController_ extends HttpServlet {
 
     private UserDAO userDAO;
     DBConnection dbConnection;

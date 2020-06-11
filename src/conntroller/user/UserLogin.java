@@ -50,7 +50,7 @@ public class UserLogin extends HttpServlet {
             HttpSession session = req.getSession();
             session.setAttribute("IS_LOGIN_ED", true);
             session.setAttribute("ROLE", user.getRole());
-<<<<<<< HEAD
+
 //            resp.sendRedirect("/product");
             if (user.getRole()==1){
                 resp.sendRedirect("/product");
@@ -60,7 +60,6 @@ public class UserLogin extends HttpServlet {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("view/LoginTest.jsp");
                 dispatcher.forward(req, resp);
             }
-=======
 
             req.setAttribute("message", "login Success");
             RequestDispatcher dispatcher = req.getRequestDispatcher("Login.jsp");
@@ -70,7 +69,6 @@ public class UserLogin extends HttpServlet {
             req.setAttribute("message", "login un success");
             RequestDispatcher dispatcher = req.getRequestDispatcher("Login.jsp");
             dispatcher.forward(req, resp);
->>>>>>> c63d7f47cdb30dde72549f9b3295b37992216d97
         }
     }
 }
