@@ -14,6 +14,7 @@ public class DBConnection {
             this.connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("no connect: false");
         }
     }
     public static DBConnection getInstance(String username, String password) throws ClassNotFoundException {

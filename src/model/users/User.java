@@ -4,7 +4,7 @@ package model.users;
 public class User {
     private String username;
     private String password;
-    private int role;
+    private int role = 0;
 
     public User(String username, String password, int role) {
         this.username = username;

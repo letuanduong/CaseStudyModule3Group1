@@ -16,42 +16,39 @@ public class UserDAO implements IUserDAO{
         public UserDAO(DBConnection connection) {
             this.connection = connection;
         }
-//############################################################################
-        public List<User> getByUsername(String _username) {
-            List<User> ListUser = new ArrayList();
-            String sql = "SELECT password, role FROM users WHERE username = ?";
+
+        public User getByUsername(String _username) {
+            User user = null;
+            String sql = "SELECT password, role FROM users WHERE username like ?";
             try {
                 PreparedStatement preparedStatement = this.connection.getConnection().prepareStatement(sql);
-                preparedStatement.setString(1, _username);
+                preparedStatement.setString(1, _username );
                 ResultSet resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
-                    String pass = resultSet.getString(2);
-                    int role = resultSet.getInt(3);
-                    User user = new User(_username, pass, role);
-                    ListUser.add(user);
+                    String pass = resultSet.getString("password");
+                    int role = resultSet.getInt("role");
+                    user = new User(_username, pass, role);
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
-//                throw new RuntimeException("Error Systax function SQL");
             }
-            return ListUser;
+            return user;
         }
 
     @Override
-    public void deleteByUsername(String username) {
+    public void deleteByUsername(String _username) {
         String sql = "delete from users where username = ?";
         try {
             PreparedStatement preparedStatement = this.connection.getConnection().prepareStatement(sql);
-            preparedStatement.setString(1, username);
+            preparedStatement.setString(1, _username);
             preparedStatement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error Systax function SQL");
         }
     }
 
     @Override
-    public void Save(String username, String password, int role) {
+    public void updateUser(String username, String password, int role) {
         String sql = "INSERT INTO users(USERNAME, PASSWORD, ROLE) VALUES (?, ?, ?)";
         try {
             PreparedStatement preparedStatement  = this.connection.getConnection().prepareStatement(sql);
@@ -72,15 +69,14 @@ public class UserDAO implements IUserDAO{
             Statement statement = this.connection.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()){
-                String name = resultSet.getString(1);
-                String pass = resultSet.getString(2);
-                int role = resultSet.getInt(3);
+                String name = resultSet.getString("username");
+                String pass = resultSet.getString("password");
+                int role = resultSet.getInt("role");
                 User user = new User(name, pass, role);
                 ListUser.add(user);
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new RuntimeException("Error Systax function SQL");
         }
         return ListUser;
     }

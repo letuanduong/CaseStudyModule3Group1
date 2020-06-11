@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="1611d3ef-3f62-4110-96b4-591a99fc249b">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="@localhost [2]" uuid="b4f54e63-73c3-414c-8308-7110c76ac29b">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="@localhost [3]" uuid="a175a527-c128-42b6-b85d-cdbd4684f4e1">
+    <data-source source="LOCAL" name="tuan_connect_mySQL" uuid="27879b5b-3bff-4435-af3b-054284ad8b90">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
