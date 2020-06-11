@@ -95,35 +95,7 @@
         </div>
     </nav>
     <div align="center">
-        <center>
-            <div align="center">
-                <h2>List of Product</h2>
-                <table border="1" cellpadding="5">
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Brand</th>
-                        <th>Price</th>
-                        <th>Amount</th>
-                        <th>Description</th>
-                        <th>Action</th>
-                    </tr>
-                    <c:forEach var="product" items="${ListProduct}">
-                        <tr>
-                            <td><c:out value="${product.getId()}"/></td>
-                            <td><c:out value="${product.getName()}"/></td>
-                            <td><c:out value="${product.getBrand()}"/></td>
-                            <td><c:out value="${product.getPrice()}"/></td>
-                            <td><c:out value="${product.getAmount()}"/></td>
-                            <td><c:out value="${product.getDescription()}"/></td>
-                            <td>
-                                <a href="/order?action=buy&id=${product.getId()}">Mua Sản Phẩm</a>
-                            </td>
-                        </tr>
-                    </c:forEach>
-                </table>
-            </div>
-        </center>
+        <h1>Thêm Vào Giỏ Hàng Thành Công</h1>
     </div>
 </div>
 

@@ -4,9 +4,7 @@ import model.ProductStone.Product;
 import model.ProductStone.ProductBill;
 import service.DBConnection;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,5 +50,29 @@ public class OrderDAO implements IOrderDAO {
             e.printStackTrace();
         }
         return productBills;
+    }
+
+    public void insertOrderDetail(int id_product, int quantity) throws SQLException {
+        String sql = "insert into orders (userName) values (?)";
+        //phải bắt đc userName
+        PreparedStatement statement = dbConnection.getConnection().prepareStatement(sql);
+        statement.setString();
+
+        //lấy ra orderId vừa thêm vào
+        String getNewestOrder = "call getNewestOrder";
+        Statement getOrder = dbConnection.getConnection().createStatement();
+        ResultSet resultSet = getOrder.executeQuery(getNewestOrder);
+        int orderId = 0;
+        while (resultSet.next()){
+            orderId = resultSet.getInt(1);
+        }
+
+
+        String inserOrderDetail = "call insert_order_detail(?,?,?)";
+        CallableStatement callableStatement = dbConnection.getConnection().prepareCall(inserOrderDetail);
+        callableStatement.setInt(1, orderId);
+        callableStatement.setInt(2, id_product);
+        callableStatement.setInt(3, quantity);
+
     }
 }

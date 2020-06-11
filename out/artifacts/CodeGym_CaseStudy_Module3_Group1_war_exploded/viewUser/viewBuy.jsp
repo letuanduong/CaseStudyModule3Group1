@@ -95,35 +95,34 @@
         </div>
     </nav>
     <div align="center">
-        <center>
-            <div align="center">
-                <h2>List of Product</h2>
-                <table border="1" cellpadding="5">
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Brand</th>
-                        <th>Price</th>
-                        <th>Amount</th>
-                        <th>Description</th>
-                        <th>Action</th>
-                    </tr>
-                    <c:forEach var="product" items="${ListProduct}">
-                        <tr>
-                            <td><c:out value="${product.getId()}"/></td>
-                            <td><c:out value="${product.getName()}"/></td>
-                            <td><c:out value="${product.getBrand()}"/></td>
-                            <td><c:out value="${product.getPrice()}"/></td>
-                            <td><c:out value="${product.getAmount()}"/></td>
-                            <td><c:out value="${product.getDescription()}"/></td>
-                            <td>
-                                <a href="/order?action=buy&id=${product.getId()}">Mua Sản Phẩm</a>
-                            </td>
-                        </tr>
-                    </c:forEach>
-                </table>
-            </div>
-        </center>
+        <h2>Thông Tin Sản Phẩm</h2>
+        <form method="post" action="/order?action=add">
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                    <th>Số Lượng Muốn Mua</th>
+                </tr>
+                <tr>
+                    <td><c:out value="${product.getId()}"/></td>
+                    <td><c:out value="${product.getName()}"/></td>
+                    <td><c:out value="${product.getBrand()}"/></td>
+                    <td><c:out value="${product.getPrice()}"/></td>
+                    <td><c:out value="${product.getAmount()}"/></td>
+                    <td>
+                        <input type="number" name="quantity">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6"align="center">
+                        <input type="submit" value="Thêm vào Giỏ Hàng">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </div>
 

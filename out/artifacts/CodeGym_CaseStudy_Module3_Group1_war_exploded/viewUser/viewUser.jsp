@@ -106,6 +106,7 @@
                         <th>Price</th>
                         <th>Amount</th>
                         <th>Description</th>
+                        <th>Action</th>
                     </tr>
                     <c:forEach var="product" items="${ListProduct}">
                         <tr>
@@ -115,6 +116,9 @@
                             <td><c:out value="${product.getPrice()}"/></td>
                             <td><c:out value="${product.getAmount()}"/></td>
                             <td><c:out value="${product.getDescription()}"/></td>
+                            <td>
+                                <a href="/order?action=buy&id=${product.getId()}">Mua Sản Phẩm</a>
+                            </td>
                         </tr>
                     </c:forEach>
                 </table>

@@ -5,6 +5,7 @@ import model.ProductStone.ProductBill;
 import model.ProductStone.ProductDAO;
 import model.order.Order;
 import model.order.OrderDAO;
+import model.users.User;
 import model.users.UserDAO;
 import service.DBConnection;
 
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,10 +40,15 @@ public class OrderController extends HttpServlet {
         }
         switch (action){
             case "pay":
+                break;
+            case "buy":
+                showBuyProduct(req,resp);
+                break;
             default:
                 listProduct(req,resp);
         }
     }
+
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -51,6 +58,7 @@ public class OrderController extends HttpServlet {
         }
         switch (action){
             case "add":
+                insertOrderDetail(req,resp);
             case "history":
                 checkHistory(req,resp);
 
@@ -86,9 +94,35 @@ public class OrderController extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
+    private void showBuyProduct(HttpServletRequest req, HttpServletResponse resp) {
+        int id =Integer.parseInt(req.getParameter("id"));
+        Product product = productDAO.getProductById(id);
+        req.setAttribute("product",product);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("viewUser/viewBuy.jsp");
+        try {
+            dispatcher.forward(req,resp);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private void insertOrderDetail(HttpServletRequest req, HttpServletResponse resp) {
+        int id_product=Integer.parseInt(req.getParameter("id"));
+        int quantity = Integer.parseInt(req.getParameter("quantity"));
 
+        try {
+            orderDAO.insertOrderDetail(id_product,quantity);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("viewUser/alertAddSuccessfully.jsp");
+            dispatcher.forward(req,resp);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
