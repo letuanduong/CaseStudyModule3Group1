@@ -15,7 +15,6 @@ public class UserLogout_ extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("Logout.jsp");
-
         try {
             requestDispatcher.forward(req, resp);
         } catch (ServletException e) {

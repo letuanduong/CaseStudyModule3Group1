@@ -44,19 +44,13 @@ public class UserLogin_ extends HttpServlet {
         String _username = req.getParameter("username");
         String _password = req.getParameter("password");
         User user = userDAO.getByUsername(_username);
-
         if (user.getPassword().equals(_password)) {
             HttpSession session = req.getSession();
             session.setAttribute("IS_LOGIN_ED", true);
             session.setAttribute("ROLE", user.getRole());
-//            req.setAttribute("message", "login Success");
-//            RequestDispatcher dispatcher = req.getRequestDispatcher("Login.jsp");
-//            dispatcher.forward(req, resp);
-
-//        } else {
-//            req.setAttribute("message", "login un success");
-//            RequestDispatcher dispatcher = req.getRequestDispatcher("Login.jsp");
-//            dispatcher.forward(req, resp);
+        } else {
+            RequestDispatcher dispatcher = req.getRequestDispatcher("Login.jsp");
+            dispatcher.forward(req, resp);
         }
     }
 }

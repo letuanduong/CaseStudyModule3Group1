@@ -27,9 +27,6 @@ public class PermissionFilterAdmin implements Filter {
             int role = Integer.parseInt(object.toString());
             if (role == ROLE_ADMIN) {
                 chain.doFilter(req, resp);
-            } else {
-                PrintWriter writer = resp.getWriter();
-                writer.write("You are customer");
             }
         }
     }
