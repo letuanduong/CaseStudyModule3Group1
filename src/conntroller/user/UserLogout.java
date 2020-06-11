@@ -1,7 +1,5 @@
 package conntroller.user;
 
-import jdk.internal.instrumentation.Logger;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,6 +25,7 @@ public class UserLogout extends HttpServlet {
         }
 
         HttpSession session = req.getSession(false);
+        session.setAttribute("IS_LOGIN_ED", false);
         if (session != null) {
             session.invalidate();
         }

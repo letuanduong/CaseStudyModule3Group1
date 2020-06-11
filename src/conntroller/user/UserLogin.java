@@ -48,6 +48,7 @@ public class UserLogin extends HttpServlet {
 
         if (user.getPassword().equals(_password)) {
             HttpSession session = req.getSession();
+            session.setAttribute("IS_LOGIN_ED", true);
             session.setAttribute("ROLE", user.getRole());
 
             req.setAttribute("message", "login Success");
