@@ -75,13 +75,13 @@
                     <a class="nav-link" href="#"><i class="fas fa-list-alt"></i> Giới thiệu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="${pageContext.request.contextPath}/TestProduct/creatP.jsp" class="nav-link"><i class="fas fa-plus"></i>Thêm Mới Sản Phẩm</a>
+                    <a href="${pageContext.request.contextPath}/viewUser/viewHistory.jsp" class="nav-link"><i class="fas fa-plus"></i>Xem Lịch Sử Mua Hàng</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/editP.jsp"><i class="fa fa-wrench"></i> Sửa Thông Tin Sản Phẩm</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/editP.jsp"><i class="fa fa-wrench"></i> Xem Giỏ Hàng Hiện Tại</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/deleteP.jsp"><i class="fas fa-times"></i> Xóa Thông Tin Sản Phẩm</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/TestProduct/deleteP.jsp"><i class="fas fa-times"></i> Thanh Toán</a>
                 </li>
             </ul>
             <ul class="navbar navbar-nav navbar-right">
@@ -94,20 +94,22 @@
             </ul>
         </div>
     </nav>
-    <div align="center">
-        <h1>Delete Product</h1>
-        <form method="post" action="${pageContext.request.contextPath}/product?action=delete">
-            <table border="1"cellpadding="5">
-                <tr>
-                    <th>Product ID :</th>
-                    <td><input type="number" name="id_product"size="45"/></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center"><input type="submit" value="Delete"/></td>
-                </tr>
-            </table>
-        </form>
-    </div>
+</div>
+<div align="center">
+    <h2>Check History</h2>
+    <form method="post" action="${pageContext.request.contextPath}/order?action=history">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>User Name :</th>
+                <td><input type="text" name="user_name" size="45"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Check">
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>
 
 </body>

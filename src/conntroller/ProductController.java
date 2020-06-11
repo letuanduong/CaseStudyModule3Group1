@@ -30,23 +30,7 @@ public class ProductController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
-        if(action == null) {
-            action = "";
-        }
-        switch (action) {
-            case "create":
-                showCreateForm(req,resp);
-                break;
-            case "edit":
-                break;
-            case "delete":
-
-                break;
-            default:
                 listProduct(req,resp);
-                break;
-        }
     }
 
 
@@ -63,16 +47,17 @@ public class ProductController extends HttpServlet {
                 insertProduct(req,resp);
                 break;
             case "edit":
-
+                editProduct(req,resp);
                 break;
             case "delete":
-
-                break;
+                deleteProduct(req,resp);
             default:
                 break;
         }
         resp.setContentType("text/html;charset=UTF-8");
     }
+
+
 
     private void insertProduct(HttpServletRequest req, HttpServletResponse resp) {
         String name = req.getParameter("product_name");
@@ -106,12 +91,36 @@ public class ProductController extends HttpServlet {
         }
 
     }
-    private void showCreateForm(HttpServletRequest req, HttpServletResponse resp) {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/createP.jsp");
+
+    private void editProduct(HttpServletRequest req, HttpServletResponse resp) {
+        int id =Integer.parseInt(req.getParameter("id_product"));
+        String name = req.getParameter("name_product");
+        String brand =req.getParameter("brand_product");
+        int price =Integer.parseInt(req.getParameter("price_product"));
+        int quantity =Integer.parseInt(req.getParameter("quantity_product"));
+        String description = req.getParameter("description_product");
+
+        Product product = new Product(id,name,brand,price,quantity,description);
+        productDAO.updateProduct(product);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/alertEdit.jsp");
         try {
             dispatcher.forward(req,resp);
         } catch (ServletException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void deleteProduct(HttpServletRequest req, HttpServletResponse resp) {
+        int id =Integer.parseInt(req.getParameter("id_product"));
+        try {
+            productDAO.deleteProduct(id);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("TestProduct/alertDelete.jsp");
+            dispatcher.forward(req,resp);
+        } catch (ServletException e) {
+            throw new RuntimeException("Không tìm thấy ID");
         } catch (IOException e) {
             e.printStackTrace();
         }

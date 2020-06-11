@@ -95,18 +95,7 @@
         </div>
     </nav>
     <div align="center">
-        <h1>Delete Product</h1>
-        <form method="post" action="${pageContext.request.contextPath}/product?action=delete">
-            <table border="1"cellpadding="5">
-                <tr>
-                    <th>Product ID :</th>
-                    <td><input type="number" name="id_product"size="45"/></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center"><input type="submit" value="Delete"/></td>
-                </tr>
-            </table>
-        </form>
+        <h1>Đã Sửa Thông Tin Sản Phẩm Thành Công</h1>
     </div>
 </div>
 
